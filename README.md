@@ -1,4 +1,4 @@
-# 🐕 React Dog
+# 🐕 Dog Studio
 
 A React-based interactive landing page featuring a **3D animated dog model**, scroll-triggered motion, layered visuals, and an immersive storytelling experience. ✨
 
@@ -92,6 +92,8 @@ react-dog/
 ├── README.md
 └── .gitignore
 
+
+
 ### 🎯 How It Works
 --- 
 
@@ -154,6 +156,4 @@ This project is created for educational and demonstration purposes.
 Feel free to explore the source code and use it as inspiration for your own projects. ❤️
 
 ### 👨‍💻 Author
-Sourabh
-
-# 🐙 GitHub: https://github.com/Sourabh108-Coder
+Sourabh 🐙 GitHub: https://github.com/Sourabh108-Coder
