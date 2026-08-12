@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,1071 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*  Navbar Styling */
+.navbar
+{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 1.5rem 2.5rem;
+  padding-top: 3.5rem;
+}
+
+.nav-elem
+{
+  color:white;
+  font-weight:bold;
+}
+
+svg
+{
+  max-width:5rem;
+  width:100%;
+  height:100%;
+}
+
+.ri-service-fill
+{
+  color:red;
+}
+
+/* Hero Styling */
+.middle
+{
+  display:flex;
+  margin:auto;
+  justify-content:center;
+  align-items:center;
+  margin-top:4rem;
+  text-align:right;
+}
+
+.bottom
+{
+  display:flex;
+  margin:auto;
+  justify-content:center;
+  align-items:center;
+  margin-top:1rem;
+}
+
+#section-1
+{
+  position:relative;
+}
+
+.first-line
+{
+  position:absolute;
+  background-color:red;
+  width:40rem;
+  height:1px;
+  transform: rotate(45deg) translate(12rem, -25rem);
+  margin-right:105rem;
+}
+.second-line
+{
+  position:absolute;
+  background-color:red;
+  width:10rem;
+  height:1px;
+  transform: rotate(125deg) translate(5rem, -25rem);
+  top:0;
+  margin-left:15rem;
+}
+
+.hero-title
+{
+  font-size:5rem;
+  font-weight:bold;
+  line-height:1;
+}
+
+.bottom-title
+{
+  font-weight:lighter;
+  line-height:1.5;
+}
+
+.bottom-text
+{
+  font-weight:normal;
+  font-size:14px;
+  line-height:1.7;
+  color:rgb(155, 155, 155);
+}
+
+.bottom-left
+{
+  width:65%;
+}
+
+.left, .right , .bottom-right
+{
+  width:50%;
+}
+
+/* title styling */
+.titles
+{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+#section-2
+{
+  padding-inline:10rem;
+  padding-block:10rem;
+}
+.title
+{
+  display:flex;
+  gap:6rem;
+  align-items:start;
+  opacity:0.5;
+  padding-block: 1rem;
+  cursor:pointer;
+  transition: all 0.3s linear;
+}
+
+.title:hover
+{
+  opacity:1;
+}
+
+.subtitle
+{
+  margin-top:0.6rem;
+  width:140px;
+  text-align:right;
+}
+
+.maintitle
+{
+  font-size:4rem;
+  font-weight:100;
+  line-height:1;
+}
+
+#canvas-elem ::after
+{
+  content:"";
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  background-image: url(/public/background-l.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  transition: all 0.3s linear;
+}
+
+main:has(#section-2 .title:hover) #canvas-elem ::after{
+  opacity:0;
+}
+
+.images
+{
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+}
+
+.title-img
+{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  transition: all 0.3s linear;
+}
+
+main:has(#section-2 .title[my-title = "tomorrow"]:hover) #tomorrow
+{
+  opacity:1;
+  background-color:rgb(4,7,24);
+}
+
+main:has(#section-2 .title[my-title = "navypier"]:hover) #navypier
+{
+  opacity:1;
+  background-color:rgb(4,7,24);
+}
+main:has(#section-2 .title[my-title = "msichicago"]:hover) #msichicago
+{
+  opacity:1;
+  background-color:rgb(4,7,24);
+}
+main:has(#section-2 .title[my-title = "phone"]:hover) #phone
+{
+  opacity:1;
+  background-color:rgb(4,7,24);
+}
+main:has(#section-2 .title[my-title = "kikk"]:hover) #kikk
+{
+  opacity:1;
+  background-color:rgb(1,15,92,0.679);
+}
+main:has(#section-2 .title[my-title = "kennedy"]:hover) #kennedy
+{
+  opacity:1;
+  background-color:rgb(4,7,24);
+}
+main:has(#section-2 .title[my-title = "opera"]:hover) #opera
+{
+  opacity:1;
+  background-color:rgb(174,4,4);
+}
+
+/* Information styling */
+
+#section-3{
+  position: relative;
+  z-index:0;
+  min-height: initial;
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.top-left-subtitle{
+  color:gray;
+}
+
+.top-left-maintitle{
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.info-top{
+  display: flex;
+  gap:10px;
+  justify-content: space-between;
+  align-items: center;
+  width:50%;
+}
+
+.paragraphs{
+  padding-left:18rem;
+}
+
+
+.info-bottom{
+  display: flex;
+  gap:10px;
+  justify-content: space-between;
+  align-items: center;
+  width:90%;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+
+.info-bottom-right
+{
+  display: flex;
+  justify-content: center;
+  gap:3rem;
+  width:50%;
+}
+
+.info-bottom-right-para
+{
+  color:gray;
+  line-height: 1.7;
+}
+
+.third-line
+{
+  position:absolute;
+  background-color:red;
+  width:15rem;
+  height:1px;
+  transform: rotate(45deg) translate(8rem, 2rem);
+  margin-right:105rem;
+}
+
+.values-box
+{
+  width: 170px;
+}
+
+.values-para
+{
+  text-align: right;
+  cursor: pointer;
+}
+
+.first-para
+{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.fourth-line
+{
+  background-color:red;
+  width:10.65rem;
+  height:2px;
+}
+
+
+/* Footer styling */
+
+.para-final
+{
+  display: flex;
+  flex-direction: column;
+  gap:20rem;
+}
+
+.footer
+{
+  width:80%;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+ 
+}
+
+.foot-left
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:5rem;
+}
+
+.foot-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
+}
+
+.ri-github-fill, .ri-linkedin-box-fill
+{
+  color:white;
+  font-size: 2rem;
+  cursor:pointer;
+}
+
+
+/* Mobile Responsiveness */
+
+/* =========================================================
+   PREMIUM MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* -------------------------
+     GLOBAL
+     ------------------------- */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+
+  main {
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+  /* -------------------------
+     NAVBAR
+     ------------------------- */
+
+  .navbar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem 1.25rem;
+    padding-top: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-elem {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  svg {
+    width: 2.8rem;
+    height: 2.8rem;
+    max-width: 2.8rem;
+  }
+
+
+  /* -------------------------
+     HERO SECTION
+     ------------------------- */
+
+  .middle {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5rem;
+    padding: 0 1.25rem;
+
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .hero-title {
+    margin: 0;
+
+    font-size: clamp(3rem, 15vw, 5rem);
+    line-height: 1.3;
+    letter-spacing: -0.07em;
+
+    max-width: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+
+    text-align: center;
+  }
+
+  .bottom-left,
+  .bottom-right {
+    width: 100%;
+  }
+
+  .bottom-title {
+    margin: 0 0 0.8rem;
+
+    font-size: 1.35rem;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+
+  .bottom-text {
+    max-width: 330px;
+    margin: auto;
+
+    color: rgb(155, 155, 155);
+
+    font-size: 0.78rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+  }
+
+
+  /* -------------------------
+     HERO DECORATIVE LINES
+     ------------------------- */
+
+  .first-line {
+    width: 16rem;
+    height: 1px;
+
+    transform: rotate(45deg);
+    top: 8rem;
+    left: -6rem;
+
+    margin: 0;
+
+    opacity: 0.6;
+  }
+
+  .second-line {
+    width: 7rem;
+    height: 1px;
+
+    transform: rotate(125deg);
+    top: 2rem;
+    right: -2rem;
+
+    margin: 0;
+
+    opacity: 0.6;
+  }
+
+
+  /* -------------------------
+     PROJECT SECTION
+     ------------------------- */
+
+  #section-2 {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 7rem 1.25rem 5rem;
+  }
+
+  .titles {
+    width: 100%;
+    gap: 0;
+  }
+
+  .title {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+
+    gap: 2rem;
+
+    align-items: center;
+
+    padding: 1.15rem 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    opacity: 0.55;
+
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s ease,
+      padding-left 0.35s ease;
+  }
+
+  .title:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .title:hover {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+
+  .subtitle {
+    width: auto;
+    min-width: 0;
+
+    margin: 0;
+
+    text-align: left;
+
+    font-size: 0.62rem;
+    line-height: 1.3;
+
+    color: rgb(150, 150, 150);
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .maintitle {
+    margin: 0;
+
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    line-height: 0.95;
+
+    font-weight: 100;
+    letter-spacing: -0.045em;
+
+    word-break: break-word;
+  }
+
+
+  /* -------------------------
+     PROJECT BACKGROUND IMAGES
+     ------------------------- */
+
+  .images {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: -2;
+  }
+
+  .title-img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition:
+      opacity 0.5s ease,
+      transform 0.7s ease;
+
+    transform: scale(1.04);
+  }
+
+  main:has(#section-2 .title[my-title="tomorrow"]:hover) #tomorrow,
+  main:has(#section-2 .title[my-title="navypier"]:hover) #navypier,
+  main:has(#section-2 .title[my-title="msichicago"]:hover) #msichicago,
+  main:has(#section-2 .title[my-title="phone"]:hover) #phone,
+  main:has(#section-2 .title[my-title="kikk"]:hover) #kikk,
+  main:has(#section-2 .title[my-title="kennedy"]:hover) #kennedy,
+  main:has(#section-2 .title[my-title="opera"]:hover) #opera {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
+  /* -------------------------
+     CANVAS BACKGROUND
+     ------------------------- */
+
+  #canvas-elem::after {
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.8;
+  }
+
+
+  /* -------------------------
+     INFORMATION SECTION
+     ------------------------- */
+
+  #section-3 {
+    position: relative;
+
+    width: 100%;
+    min-height: auto;
+
+    box-sizing: border-box;
+
+    padding: 6rem 1.25rem 3rem;
+  }
+
+  .information {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  /* Top information */
+
+  .info-top {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1rem;
+  }
+
+  .top-left-subtitle {
+    margin: 0;
+
+    font-size: 0.7rem;
+
+    color: #777;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .top-left-maintitle {
+    margin: 0;
+
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1;
+
+    font-weight: 500;
+    letter-spacing: -0.05em;
+  }
+
+  .paragraphs {
+    width: 100%;
+    padding-left: 0;
+
+    margin-top: 1rem;
+  }
+
+  .paragraphs p {
+    max-width: 500px;
+
+    font-size: 0.82rem;
+    line-height: 1.8;
+
+    color: rgb(150, 150, 150);
+  }
+
+
+  /* -------------------------
+     INFORMATION BOTTOM
+     ------------------------- */
+
+  .info-bottom {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 3rem;
+
+    margin-top: 4rem;
+  }
+
+  .info-bottom-right {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1.5rem;
+  }
+
+  .info-bottom-right-para {
+    margin-left: 2rem;
+
+    color: rgb(145, 145, 145);
+    line-height: 1.8;
+  }
+
+  .right-para-two
+  {
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+
+  /* -------------------------
+     VALUES
+     ------------------------- */
+
+  .values-box {
+    width: 100%;
+  }
+
+  .values-para {
+    margin-left: 2rem;
+    padding: 0.85rem 0;
+
+    text-align: left;
+
+    font-size: 0.85rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    cursor: pointer;
+
+    transition:
+      color 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .values-para:hover {
+    color: red;
+    padding-left: 0.5rem;
+  }
+
+  .first-para {
+    gap: 0.5rem;
+  }
+
+  .fourth-line {
+    width: 10rem;
+    height: 1px;
+
+    margin-left: 2rem;
+  }
+
+
+  /* -------------------------
+     INFORMATION DECORATION
+     ------------------------- */
+
+  .third-line {
+    width: 8rem;
+    height: 1px;
+
+    transform: rotate(45deg);
+
+    top: 3rem;
+    right: -3rem;
+
+    margin: 0;
+
+    opacity: 0.5;
+  }
+
+
+  /* -------------------------
+     FOOTER
+     ------------------------- */
+
+  .para-final {
+    gap: 5rem;
+  }
+
+  .footer {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2.5rem;
+
+    margin-top: 5rem;
+    padding: 0 1.25rem 2rem;
+  }
+
+  .foot-left {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.8rem;
+  }
+
+  .foot-left p {
+    margin: 0;
+
+    color: rgb(140, 140, 140);
+
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+  }
+
+  .foot-right {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+  }
+
+  .ri-github-fill,
+  .ri-linkedin-box-fill {
+    font-size: 3rem;
+
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .ri-github-fill:hover,
+  .ri-linkedin-box-fill:hover {
+    color: red;
+    transform: translateY(-3px);
+  }
+
+
+  /* -------------------------
+     MOBILE BACKGROUND OVERLAY
+     ------------------------- */
+
+  #section-2::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    background:
+      linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.12) 50%,
+        rgba(0, 0, 0, 0.45) 100%
+      );
+
+    z-index: -1;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES — 480px AND BELOW
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 1.3rem 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .nav-elem {
+    font-size: 0.68rem;
+  }
+
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+
+  /* Hero */
+
+  .middle {
+    margin-top: 4rem;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 3.4rem;
+  }
+
+  .bottom {
+    padding: 0 1.25rem;
+  }
+
+  .bottom-title {
+    font-size: 1.2rem;
+  }
+
+  .bottom-text {
+    font-size: 0.72rem;
+    line-height: 1.75;
+  }
+
+
+  /* Projects */
+
+  #section-2 {
+    padding: 6rem 1rem 4rem;
+  }
+
+  .title {
+    grid-template-columns: 3.8rem 1fr;
+    gap: 1.5rem;
+
+    padding: 1rem 0;
+  }
+
+  .subtitle {
+    font-size: 0.55rem;
+  }
+
+  .maintitle {
+    font-size: 1.9rem;
+  }
+
+
+  /* Information */
+
+  #section-3 {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .top-left-maintitle {
+    font-size: 1.9rem;
+  }
+
+  .paragraphs p {
+    font-size: 0.75rem;
+  }
+
+  .info-bottom-right {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    padding-inline: 1rem;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES — 360px AND BELOW
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .hero-title {
+    font-size: 2.9rem;
+  }
+
+  .maintitle {
+    font-size: 1.65rem;
+  }
+
+  .title {
+    grid-template-columns: 3.3rem 1fr;
+  }
+
+  .subtitle {
+    font-size: 0.5rem;
+  }
+
+  .bottom-text {
+    font-size: 0.68rem;
+  }
 }
