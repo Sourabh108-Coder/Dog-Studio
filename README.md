@@ -94,7 +94,7 @@ react-dog/
 
 
 ### Project Demo
-![Demo](/project_video/Dog-Studio.mp4)
+![Demo](/Demo/Dog.mp4)
 
 
 ### 🎯 How It Works
