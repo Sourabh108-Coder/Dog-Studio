@@ -277,7 +277,7 @@ const Dog = () => {
         })
       });
 
-    },[]);
+    },[mat2, mat8, mat9, mat10, mat12, mat13, mat19]);
 
   return (
       <>
