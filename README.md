@@ -94,7 +94,7 @@ react-dog/
 
 
 ### Project Demo
-[Demo](/Demo/Dog.mp4)
+[Project Demo](/Demo/Dog.mp4)
 
 
 ### 🎯 How It Works
