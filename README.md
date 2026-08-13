@@ -93,6 +93,9 @@ react-dog/
 └── .gitignore
 
 
+### Project Demo
+![Demo](./project_video/Dog-Studio.mp4)
+
 
 ### 🎯 How It Works
 --- 
